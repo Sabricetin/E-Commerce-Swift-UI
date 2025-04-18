@@ -8,24 +8,23 @@
 import SwiftUI
 
 struct SectionView: View {
-    
     //MARK: -Property
-    
     @State var rotateClockWise: Bool
     
     var body: some View {
-        VStack (spacing: 0) {
+        VStack(spacing: 0){
             Spacer()
             
-            Text("Kategoriler" .uppercased())
+            Text("Kategoriler".uppercased())
                 .font(.footnote)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
-                .rotationEffect(Angle(degrees: rotateClockWise ? 90: -90))
-                 
-                 Spacer()
+                .rotationEffect(Angle(degrees: rotateClockWise ? 90 : -90))
+            
+            Spacer()
         }
         
+        Spacer()
         .background(colorGray)
         .cornerRadius(12)
         .frame(width: 85)

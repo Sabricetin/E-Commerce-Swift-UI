@@ -9,11 +9,11 @@ import SwiftUI
 
 struct FeaturedTabView: View {
     var body: some View {
-        TabView {
+        TabView{
             ForEach(players) { player in
                 FeaturedItemView(player: player)
-                    .padding(.top , 10)
-                    .padding(.horizontal, 10)
+                    .padding(.top, 10)
+                    .padding(.horizontal, 15)
             }
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
@@ -23,3 +23,4 @@ struct FeaturedTabView: View {
 #Preview {
     FeaturedTabView()
 }
+

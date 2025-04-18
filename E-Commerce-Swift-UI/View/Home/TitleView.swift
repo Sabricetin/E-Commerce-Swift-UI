@@ -4,29 +4,27 @@
 //
 //  Created by Sabri Çetin on 17.04.2025.
 //
-
 import SwiftUI
 
 struct TitleView: View {
     
     //MARK: -Preview
+    var title: String
     
-    var title : String
-    
-    //MARK -Body
+    //MARK: -Body
     var body: some View {
-        HStack {
+        HStack{
             Text(title)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
             Spacer()
         }
         .padding(.horizontal)
-        .padding(.top , 15)
-        padding(.bottom , 10)
+        .padding(.top, 15)
+        .padding(.bottom, 10)
     }
 }
 
 #Preview {
-    TitleView(title: "KASK")
+    TitleView(title: "ude kask")
 }

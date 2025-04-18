@@ -20,7 +20,7 @@ let sampleProduct: Product = products[8]
 
 //Color
 
-let colorBackground: Color = Color("colorBackground")
+let colorBackground: Color = Color("ColorBackground")
 let colorGray : Color = Color(.systemGray4)
 
 //Layout
@@ -33,4 +33,6 @@ var gridLayout: [GridItem] {
 
 //UX
 
-let feedBack = UIImpactFeedbackGenerator(style: .medium)
+let feedback = UIImpactFeedbackGenerator(style: .medium)
+
+

@@ -12,6 +12,7 @@ struct E_Commerce_Swift_UIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Shop())
         }
     }
 }

@@ -5,6 +5,7 @@
 //  Created by Sabri Çetin on 17.04.2025.
 //
 
+
 import SwiftUI
 
 struct FeaturedItemView: View {
@@ -14,15 +15,14 @@ struct FeaturedItemView: View {
     
     //MARK: -Body
     var body: some View {
-        
         Image(player.image)
             .resizable()
             .scaleEffect()
             .cornerRadius(12)
-        
     }
 }
 
 #Preview {
     FeaturedItemView(player: players[0])
 }
+

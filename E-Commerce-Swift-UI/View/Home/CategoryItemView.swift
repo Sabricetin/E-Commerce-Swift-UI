@@ -4,7 +4,6 @@
 //
 //  Created by Sabri Çetin on 17.04.2025.
 //
-
 import SwiftUI
 
 struct CategoryItemView: View {
@@ -14,31 +13,34 @@ struct CategoryItemView: View {
     
     //MARK: -Body
     var body: some View {
-       
         Button(action: {}) {
-            HStack(alignment: .center , spacing: 6) {
+            HStack(alignment: .center, spacing: 12) {
                 Image(category.image)
                     .renderingMode(.template)
                     .scaledToFit()
-                    .frame(width: 30 , height: 30 , alignment: .center)
-                    .foregroundColor(.gray)
-                    Spacer()
+                    .frame(width: 45, height: 45, alignment: .center)
+                    .foregroundColor(.gray) // Daha dikkat çekici bir renk
+        
                 Text(category.name.uppercased())
-                    .fontWeight(.light)
-                    .foregroundColor(.gray)
-                
+                    .font(.headline) // Modern bir font
+                    .fontWeight(.semibold)
+                    .foregroundColor(.primary) // Yazı rengi daha canlı
+            
                 Spacer()
             }
-            
-            .padding()
-            .background(.white)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
+            .background(Color.white)
             .cornerRadius(12)
-            .background(
+            .shadow(color: .gray.opacity(0.3), radius: 8, x: 0, y: 4) // Hafif gölge ekleyerek derinlik kazandır
+            .overlay(
                 RoundedRectangle(cornerRadius: 12)
-                    .stroke(.gray , lineWidth: 1)
-            
+                    .stroke(Color.gray.opacity(0.5), lineWidth: 1)
             )
+            .scaleEffect(1.05) // Hover efekti için hafif büyütme
+            .animation(.easeInOut(duration: 0.2), value: 1)
         }
+        .buttonStyle(PlainButtonStyle()) // Buton stilini değiştirme
     }
 }
 

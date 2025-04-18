@@ -9,27 +9,22 @@ import SwiftUI
 
 struct LogoView: View {
     
-    //MARK: -Bodey
+    //MARK: -Body
     var body: some View {
-        HStack (spacing: 4){
-            
-            Text("asagı"
-                .uppercased())
-            .font(.title3)
-            .fontWeight(.black)
-            .foregroundColor(.black)
+        HStack(spacing: 4){
+            Text("Asagi".uppercased())
+                .font(.title3)
+                .fontWeight(.black)
+                .foregroundColor(.black)
             
             Image("logo-dark")
                 .resizable()
-                .frame(width: 30, height: 30 , alignment: .center)
+                .frame(width: 30, height: 30, alignment: .center)
             
-            Text("tıkla"
-                .uppercased())
-            .font(.title3)
-            .fontWeight(.black)
-            .foregroundColor(.black)
-                
-            
+            Text("Tikla".uppercased())
+                .font(.title3)
+                .fontWeight(.black)
+                .foregroundColor(.black)
         }
     }
 }

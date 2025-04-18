@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct BrandItemView: View {
-    
     //MARK: Property
-    
     let brand: Brand
     
     //MARK: -Body
@@ -22,9 +20,8 @@ struct BrandItemView: View {
             .background(.white)
             .cornerRadius(12)
             .background(
-                RoundedRectangle(cornerRadius: 12)
-                    .stroke(Color.gray, lineWidth: 1)
-            )
+            RoundedRectangle(cornerRadius: 12).stroke(Color.gray, lineWidth: 1)
+        )
     }
 }
 

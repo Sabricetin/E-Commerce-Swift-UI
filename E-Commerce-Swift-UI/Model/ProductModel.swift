@@ -1,8 +1,8 @@
 //
-//  ProductModel.swift
-//  Udemig-E-commerce-SwiftUI
+//  BrandsModel.swift
+//  E-Commerce-Swift-UI
 //
-//  Created by Mehmet Seyhan on 15.03.2025.
+//  Created by Sabri Çetin on 17.04.2025.
 //
 
 import Foundation
